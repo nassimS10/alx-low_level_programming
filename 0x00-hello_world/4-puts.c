@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-/*
- * main - this is a main function
+/**
+ * main - entry point of any C program
  *
- * Return: result 
+ * Return:  specify a value to be returned
  */
-
 int main(void)
 {
-        puts("\"Programming is like building a multilingual puzzle");
-        return(0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
-
