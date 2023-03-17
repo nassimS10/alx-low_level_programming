@@ -9,7 +9,7 @@ int main(void)
 	char letter;
 
 	letter = 'a';
-	while (letter == '#')
+	while (letter != '{')
 	{
 		putchar (letter);
 		letter++;
