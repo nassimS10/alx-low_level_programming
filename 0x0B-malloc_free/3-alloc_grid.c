@@ -22,7 +22,7 @@ int **a, b, c;
 		return (NULL);
 	}
 
-	for (b = 0; r < height; b++)
+	for (b = 0; b < height; b++)
 	{
 		a[b] = malloc(sizeof(int) * width);
 
