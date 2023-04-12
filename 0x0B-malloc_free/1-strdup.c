@@ -7,25 +7,25 @@
  *@str: string to dpl
  * Return: return  string or NULL
  */
-
 char *_strdup(char *str)
 {
-	char *strn = NULL;
-	unsigned int j;
-	int a;
+	char *strnew = NULL;
+	unsigned int i;
+	int n;
 
 	if (str == NULL)
 		return (NULL);
-	for (a = 0; str[a] != '\0'; a++)
-	strn = (char *)malloc(n + 1 * sizeof(char));
-	if (strn != NULL)
+	for (n = 0; str[n] != '\0'; n++)
+		;
+	strnew = (char *)malloc(n + 1 * sizeof(char));
+	if (strnew != NULL)
 	{
-		for (j = 0; str[j] != '\0'; j++)
-			strn[j] = str[j];
+		for (i = 0; str[i] != '\0'; i++)
+			strnew[i] = str[i];
 	} else
 	{
 		return (NULL);
 	}
-	strn[j] = '\0';
-	return (strn);
+	strnew[i] = '\0';
+	return (strnew);
 }
