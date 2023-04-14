@@ -17,7 +17,7 @@ rang = (max - min) + 1;
 pt = malloc(rang *sizeof(*pt));
 if (pt == NULL)
 return (NULL);
-for (a = 0; a < size && min <= max; a++, min++)
+for (a = 0; a < rang && min <= max; a++, min++)
 *(pt + a) = min;
 return (pt);
 }
