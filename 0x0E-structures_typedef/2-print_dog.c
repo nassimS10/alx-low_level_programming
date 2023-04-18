@@ -14,8 +14,8 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d)
 {
-printf("name: %s\n", d->name ? d->name : "(nil)");
-printf("age: %f\n", d->age);
-printf("owner: %s\n", d->owner ? d->owner : "(nil)");
+printf("Name: %s\n", d->name ? d->name : "(nil)");
+printf("Age: %f\n", d->age);
+printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
 }
 }
