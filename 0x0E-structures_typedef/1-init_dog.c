@@ -15,7 +15,10 @@ if (d == NULL)
 {
 exit(1);
 }
+else
+{
 d->name = name;
 d->age = age;
 d->owner = owner;
+}
 }
