@@ -17,7 +17,7 @@ va_list ap;
 va_start(ap, n);
 if (n == 0)
 return (0);
-i = sums = 0;
+j = sums = 0;
 for (j = 0; j < n; j++)
 sums += va_arg(ap, unsigned int);
 va_end(ap);
