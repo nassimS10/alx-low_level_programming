@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * list_len - list len
  * @h: h
@@ -15,5 +16,5 @@ while (h)
 o++;
 h = h->next;
 }
-return (0);
+return (o);
 }
