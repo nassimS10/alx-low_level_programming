@@ -4,11 +4,10 @@
 #include "lists.h"
 
 /**
- * add_node - adds a node
- * @head: hrad of node
+ * add_node - Adds node
+ * @head: Head
  * @str: string
- *
- * Return : return
+ * Return: return n
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -23,5 +22,5 @@ n->str = strdup(str);
 n->l = l;
 n->next = (*head);
 (*head) = n;
-return (*head);
+return (n);
 }
