@@ -20,7 +20,7 @@ n_node = malloc(sizeof(list_t));
 if (!n_node)
 return (NULL);
 n_node->str = strdup(str);
-n_node->len = str_len;
+n_node->len = str_l;
 n_node->next = NULL;
 if (*head == NULL)
 {
@@ -28,7 +28,7 @@ if (*head == NULL)
 return (n_node);
 }
 while (c_node->next)
-c_ node = c_node->next;
+c_node = c_node->next;
 c_node->next = n_node;
 return (n_node);
 }
