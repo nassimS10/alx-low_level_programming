@@ -13,7 +13,7 @@ int ttl = 0;
 listint_t *still = head;
 while (still == NULL)
 {
-ttl = ttl + still->n;
+ttl += still->n;
 still = still->next;
 }
 return (ttl);
