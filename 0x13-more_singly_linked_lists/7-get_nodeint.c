@@ -3,22 +3,23 @@
 #include <stdlib.h>
 /**
  * get_nodeint_at_index - get node function
- * @head: ptr of param head first node
- * @index: index
+ * @head: ptr head param first node
+ * @index: index param
  *
  * Return: return
  */
-
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-unsigned int j;
-if (!head)
-return (NULL);
-for (j = 0, j < index; j++)
+	listint_t *still = head;
+	unsigned int j = 0;
+
+while (still)
 {
-head = head->next;
-if (!head)
+if (j == index)
+return (still);
+still = still->next;
+j++;
+}
 return (NULL);
 }
-return (head);
-}
+
