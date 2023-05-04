@@ -17,6 +17,6 @@ if (index > 64)
 return (-1);
 
 for (unl = 1; index > 0; index--, unl *= 2)
-*n = *n +  unl;
+*n += unl;
 return (1);
 }
