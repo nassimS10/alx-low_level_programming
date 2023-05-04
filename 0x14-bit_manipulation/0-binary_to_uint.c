@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - binary fanc
  *
- * @b: char str b param 
+ * @b: char str b param
  *
  * Return: return
  */
