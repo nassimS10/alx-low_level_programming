@@ -16,7 +16,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 if (index > 64)
 return (-1);
 
-for (unl = 1; index > 1; index--, unl *= 2)
+for (unl = 1; index > 0; index--, unl *= 2)
 *n = *n +  unl;
 return (1);
 }
