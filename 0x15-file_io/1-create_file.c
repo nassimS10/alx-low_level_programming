@@ -22,7 +22,7 @@ for (ln = 0; text_content[ln];)
 ln++;
 }
 fopp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-wrr= write(fopp, text_content, ln);
+wrr = write(fopp, text_content, ln);
 
 if (fopp == -1 || wrr == -1)
 return (-1);
